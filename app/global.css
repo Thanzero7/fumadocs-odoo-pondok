@@ -1,3 +1,19 @@
 @import 'tailwindcss';
 @import 'fumadocs-ui/css/neutral.css';
 @import 'fumadocs-ui/css/preset.css';
+
+
+
+/* Make embedded YouTube iframes scale to content width and match image sizes */
+.video-embed-modern {
+	width: 100%;
+	max-width: 100%;
+}
+.video-embed-modern iframe {
+	width: 100% !important;
+	aspect-ratio: 16/9 !important;
+	height: auto !important;
+	display: block !important;
+	border: 0 !important;
+}
+

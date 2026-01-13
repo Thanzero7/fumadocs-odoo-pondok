@@ -1,0 +1,69 @@
+---
+title: Jadwal Pelajaran
+---
+
+
+<div className="video-embed-modern">
+  <iframe 
+    src="https://www.youtube.com/embed/mY4S1xYSnV8?rel=0&modestbranding=1" 
+    title="Jadwal Pelajaran Tutorial"
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen>
+  </iframe>
+</div>
+
+## Master Data - Jadwal Pelajaran
+
+Data **Jadwal Pelajaran** digunakan untuk menyusun dan mengatur waktu belajar santri sesuai tahun ajaran, kelas, semester, mata pelajaran, dan guru yang mengajar. Data ini menjadi acuan utama dalam kegiatan belajar mengajar agar jadwal berjalan tertib dan terstruktur.
+
+### Mengatur Jadwal Pelajaran
+
+Berikut adalah langkah-langkah untuk mengatur jadwal pelajaran pada Odoo Pesantren.
+
+1. Login menggunakan akun administrator. Jika Anda belum memahami cara login sebagai admin, silakan lihat panduan [**Login Admin** di sini](../../panduan-login/login-admin.md).
+2.  Buka modul **Sekolah**, lalu klik menu **Pengaturan** kemudian pilih submenu **Jadwal Pelajaran**.
+
+    <figure><img src="/assets/images-276.png" alt="" /><figcaption></figcaption></figure>
+
+3.  Klik tombol **"Baru"** untuk membuat data jadwal pelajaran baru.
+
+    <figure><img src="/assets/images-277.png" alt="" /><figcaption></figcaption></figure>
+
+4.  Akan tampil halaman form, isi inputan yang tersedia seperti:
+
+    * **Tahun Ajaran** (pilih tahun ajaran yang saat ini aktif).
+    * **Kelas** (pilih kelas yang ada).
+    * **Semester** (pilih semester sesuai saat membuat tahun ajaran).
+    * **List Tabel Jadwal Pelajaran** (untuk mengatur detail jadwal harian).
+
+    <figure><img src="/assets/images-278.png" alt="" /><figcaption></figcaption></figure>
+
+5.  Untuk mengisi detail jadwal, klik salah satu baris pada tabel (misalnya: _Hari Senin, Jam Ke-1_) hingga muncul pop-up form, lalu isi inputannya:
+
+    * **Hari** (pilih hari jadwal pelajaran).
+    * **Kelas** (otomatis terisi sesuai kelas yang telah dimasukkan).
+    * **Jam Pelajaran** (pilih jam pelajaran yang ada di sistem).
+    * **Mata Pelajaran** (pilih mata pelajaran yang ada di sistem).
+    * **Guru** (pilih guru yang mengajar sesuai mata pelajaran).
+
+    Jika sudah klik tombol **Simpan & Tutup** untuk menyimpan detail jadwal harian.
+
+    <figure><img src="/assets/images-279.png" alt="" /><figcaption></figcaption></figure>
+
+6. Ulangi langkah tersebut untuk melengkapi jadwal pada hari-hari lain (misalnya: Selasa–Sabtu).
+7.  Setelah seluruh jadwal terisi, lalu klik ikon **Simpan** di sebelah kanan ikon **Gear** agar jadwal pelajaran tersimpan di sistem.
+
+    <figure><img src="/assets/images-281.png" alt="" /><figcaption></figcaption></figure>
+
+### Edit dan Hapus Data Jadwal Pelajaran
+
+Untuk mengedit suatu data jadwal pelajaran, silahkan pilih terlebih dahulu data mana yang akan diedit. Editlah data jadwal pelajaran dan klik icon **Simpan** untuk menyimpan data perubahan tersebut.
+
+Untuk menghapus suatu data jadwal pelajaran adalah dengan pilih data mana yang akan dihapus, kemudian klik icon **Gear** atau **Action** lalu pilih opsi **Hapus**, maka akan tampil dialog konfirmasi apakah anda ingin menghapus data tersebut. Jika ya, klik **Hapus** jika tidak maka klik **Tidak, tetap simpan**.
+
+***
+
+> ⚠️ **Peringatan:**
+Data ini **dapat dihapus**, namun apabila sudah terdapat transaksi yang terkait dengan data tersebut, **disarankan untuk tidak menghapusnya** demi menjaga konsistensi dan keakuratan data transaksi di sistem.
+

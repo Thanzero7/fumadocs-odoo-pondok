@@ -1,0 +1,92 @@
+---
+title: Orang Tua
+---
+
+
+
+<div className="video-embed-modern">
+  <iframe 
+    src="https://drive.google.com/file/d/1HgjEGL-atTHB6rjWWH7kCG5bKDWiFou0/view" 
+    title="Orang Tua (Data Operasional) Tutorial"
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen>
+  </iframe>
+</div>
+
+## Master Data - Orang Tua
+
+Data **Orang Tua** merupakan data utama yang berfungsi untuk menghubungkan santri dengan wali mereka dalam sistem Odoo Pesantren. Dengan menambahkan data orang tua, pihak pesantren dapat mengelola informasi identitas orang tua serta mengaitkannya dengan anak (santri) yang bersangkutan.
+
+Data orang tua pada umumnya **dibuat secara otomatis** ketika calon santri mengisi data orang tua saat proses **pendaftaran**. Setelah calon santri diterima secara resmi di pesantren, sistem akan otomatis menghasilkan entri data orang tua dan menghubungkannya dengan santri yang bersangkutan.
+
+Namun, administrator juga dapat menambahkan data orang tua **secara manual** apabila diperlukan, misalnya untuk melengkapi data yang belum ada atau melakukan pembaruan terhadap data lama.
+
+### Menambahkan Data Orang Tua
+
+Berikut adalah langkah-langkah untuk menambahkan data orang tua pada Odoo Pesantren.
+
+1. Login menggunakan akun administrator. Jika Anda belum memahami cara login sebagai admin, silakan lihat panduan [**Login Admin** di sini](../../panduan-login/login-admin.md).
+2.  Buka modul **Kesantrian**, lalu klik menu **Kesantrian** kemudian pilih submenu **Orang Tua**.
+
+    <figure><img src="/assets/images-128.png" alt="" /><figcaption></figcaption></figure>
+
+3.  Klik tombol **"Baru"** untuk membuat data orang tua baru.
+
+    <figure><img src="/assets/images-129.png" alt="" /><figcaption></figcaption></figure>
+
+4.  Akan tampil halaman form, isi inputan yang tersedia seperti:
+
+    * **Nama Orang Tua** (masukkan nama orang tua).
+    * **Email** (masukkan email orang tua).
+    * **Nomor Telepon** (masukkan nomor telepon orang tua).
+    * **NIK** (masukkan nomor induk kependudukan orang tua).
+    * **Alamat, Kota dan RT/RW** (masukkan alamat, kota, dan rt/rw orang tua).
+    * **Hubungan** (Isi dengan hubungan orang tua dengan santri).
+    * **Label** (misalnya: _Orang Tua_).
+    * **Akses Limit** (opsional, diaktifkan jika ingin membatasi penggunaan saldo anak oleh orang tua).
+    * **Tab Santri** → menampilkan daftar santri yang terhubung dengan akun orang tua tersebut.
+
+    <figure><img src="/assets/images-130.png" alt="" /><figcaption></figcaption></figure>
+
+5.  Setelah semua inputan diisi dengan benar, klik icon **Simpan** di sebelah kanan icon **Gear** agar data orang tua tersimpan di sistem.
+
+    <figure><img src="/assets/images-131.png" alt="" /><figcaption></figcaption></figure>
+
+6.  Data orang tua berhasil disimpan dan dapat digunakan untuk memantau aktivitas serta transaksi anak melalui akun login orang tua.
+
+    <figure><img src="/assets/images-132.png" alt="" /><figcaption></figcaption></figure>
+
+### Mengaitkan Data Orang Tua ke Santri
+
+Berikut adalah langkah-langkah untuk mengaitkan data orang tua ke Santri pada Odoo Pesantren.
+
+1.  Pada modul **Kesantrian**, klik menu **Kesantrian** kemudian pilih submenu **Santri**.
+
+    <figure><img src="/assets/images-133.png" alt="" /><figcaption></figcaption></figure>
+
+2.  Pilih santri yang akan ditambahkan data orang tuanya.
+
+    <figure><img src="/assets/images-134.png" alt="" /><figcaption></figcaption></figure>
+
+3.  Pada **Tab Orang Tua**, tambahkan orang tua yang telah dibuat sebelumnya pada field **Akun Orang Tua**, lalu lengkapi data yang diperlukan.
+
+    <figure><img src="/assets/images-135.png" alt="" /><figcaption></figcaption></figure>
+
+4.  Kemudian, klik icon **Simpan** di sebelah kanan icon **Gear** agar perubahan tersimpan di sistem.
+
+    <figure><img src="/assets/images-136.png" alt="" /><figcaption></figcaption></figure>
+
+5.  Kembali ke halaman form **data Orang Tua** untuk memastikan bahwa santri telah terhubung dengan akun orang tua tersebut.
+
+    <figure><img src="/assets/images-137.png" alt="" /><figcaption></figcaption></figure>
+
+### Edit Data Orang Tua
+
+Untuk mengedit suatu data orang tua, silahkan pilih terlebih dahulu data mana yang akan diedit. Editlah data orang tua dan klik icon **Simpan** untuk menyimpan data perubahan tersebut.
+
+***
+
+> ⚠️ **Peringatan:**
+Data **Orang Tua** tidak dapat dihapus dari sistem. Anda hanya diperbolehkan melakukan **perubahan atau pembaruan data** pada entri Orang Tua yang sudah ada.
+
