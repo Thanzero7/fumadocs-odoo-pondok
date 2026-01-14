@@ -1,5 +1,5 @@
 // app/[locale]/docs/layout.tsx
-import { source } from "@/lib/source";
+import { getSortedPageTree } from "@/lib/source";
 import { DocsLayout } from "fumadocs-ui/layouts/notebook";
 import { baseOptions } from "@/lib/layout.shared";
 import SidebarStyle from '@/components/SidebarStyle';
@@ -16,9 +16,8 @@ export default async function Layout({
 
   return (
     <DocsLayout
-      // Jika parser: 'dir' sudah diset di source.ts,
       // getSortedPageTree(locale) mengambil tree lalu menyortirnya berdasarkan frontmatter `order`.
-      tree={source.getSortedPageTree(locale)}
+      tree={getSortedPageTree(locale)}
       {...base}
       nav={{ ...nav, mode: "top" }}
       sidebar={{
@@ -33,7 +32,7 @@ export default async function Layout({
           },
         ],
       }}
-      
+
     >
       {/* Inject runtime sidebar styles (client) to avoid build-time CSS parsing bugs */}
       <SidebarStyle />
