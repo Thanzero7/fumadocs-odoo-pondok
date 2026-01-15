@@ -10,19 +10,25 @@ Dashboard di Odoo Pesantren dirancang untuk memberikan informasi yang paling rel
 ### Menu Dashboard
 
 <Cards>
-  <Card
-    title="Dashboard Santri & Orang Tua"
-    description="Pantau saldo, tagihan, dan aktivitas akademik santri."
-    href="/docs/dashboard/menu-dashboard"
-  />
-  <Card
-    title="Dashboard Guru & Musyrif"
-    description="Statistik kehadiran dan perkembangan hafalan santri."
-    href="/docs/dashboard/menu-dashboard"
-  />
-  <Card
-    title="Dashboard Operasional"
-    description="Monitoring stok, pembelian, dan keuangan pesantren."
-    href="/docs/dashboard/menu-dashboard"
-  />
+  <Card title="Akademik & Kesiswaan" description="Monitoring kegiatan belajar." icon={<GraduationCap />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/dashboard/menu-dashboard/dashboard-guru" icon={<GraduationCap />}>Dashboard Guru</CardButton>
+      <CardButton href="/docs/dashboard/menu-dashboard/dashboard-musyrif" icon={<UserCheck />}>Dashboard Musyrif</CardButton>
+      <CardButton href="/docs/dashboard/menu-dashboard/dashboard-sekolah" icon={<Home />}>Dashboard Sekolah</CardButton>
+    </div>
+  </Card>
+  <Card title="Administrasi & Finansial" description="Monitoring tagihan and pendaftaran." icon={<CreditCard />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/dashboard/menu-dashboard/dashboard-keuangan" icon={<CreditCard />}>Dashboard Keuangan</CardButton>
+      <CardButton href="/docs/dashboard/menu-dashboard/dashboard-penagihan" icon={<FileText />}>Dashboard Penagihan</CardButton>
+      <CardButton href="/docs/dashboard/menu-dashboard/dashboard-psb" icon={<Users />}>Dashboard PSB</CardButton>
+    </div>
+  </Card>
+  <Card title="Logistik & Santri" description="Monitoring operasional and santri." icon={<Box />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/dashboard/menu-dashboard/dashboard-stok-persediaan" icon={<Box />}>Dashboard Stok</CardButton>
+      <CardButton href="/docs/dashboard/menu-dashboard/dashboard-pembelian" icon={<ClipboardList />}>Dashboard Pembelian</CardButton>
+      <CardButton href="/docs/dashboard/menu-dashboard/dashboard-santri" icon={<Users />}>Dashboard Santri</CardButton>
+    </div>
+  </Card>
 </Cards>

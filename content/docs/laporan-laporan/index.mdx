@@ -10,28 +10,32 @@ Sistem Odoo Pesantren menyediakan berbagai laporan otomatis mulai dari laporan a
 ### Kategori Laporan
 
 <Cards>
-  <Card
-    title="Laporan Penagihan & Keuangan"
-    description="Arus kas, laba rugi, neraca, dan laporan audit."
-    href="/docs/laporan-laporan/laporan-penagihan"
-    icon={<CreditCard />}
-  />
-  <Card
-    title="Laporan Stok & Persediaan"
-    description="Analisis pergerakan, penilaian stok, dan histori lokasi."
-    href="/docs/laporan-laporan/laporan-stok-persediaan"
-    icon={<Box />}
-  />
-  <Card
-    title="Laporan Point of Sale"
-    description="Detail penjualan, laporan sesi kasir, dan pesanan."
-    href="/docs/laporan-laporan/laporan-point-of-sale"
-    icon={<Monitor />}
-  />
-  <Card
-    title="Laporan Pembelian"
-    description="Analisis pengadaan barang dan performa pemasok."
-    href="/docs/laporan-laporan/laporan-pembelian.mdx"
-    icon={<History />}
-  />
+  <Card title="Penagihan & Keuangan" description="Analisis laba rugi and arus kas." icon={<CreditCard />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/laba-and-rugi" icon={<FileText />}>Laba & Rugi</CardButton>
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/neraca" icon={<FileText />}>Laporan Neraca</CardButton>
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/arus-kas" icon={<History />}>Arus Kas</CardButton>
+    </div>
+  </Card>
+  <Card title="Stok & Persediaan" description="Analisis pergerakan barang." icon={<Box />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-stok-persediaan/stok-persediaan" icon={<Box />}>Stok Saat Ini</CardButton>
+      <CardButton href="/docs/laporan-laporan/laporan-stok-persediaan/sejarah-pergerakan" icon={<History />}>Histori Stok</CardButton>
+      <CardButton href="/docs/laporan-laporan/laporan-stok-persediaan/penilaian-stok" icon={<CreditCard />}>Penilaian Stok</CardButton>
+    </div>
+  </Card>
+  <Card title="Point of Sale" description="Rekapitulasi penjualan kasir." icon={<Monitor />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-point-of-sale/detail-penjualan" icon={<FileText />}>Detail Penjualan</CardButton>
+      <CardButton href="/docs/laporan-laporan/laporan-point-of-sale/laporan-sesi" icon={<History />}>Laporan Sesi</CardButton>
+      <CardButton href="/docs/laporan-laporan/laporan-point-of-sale/laporan-pesanan" icon={<FileText />}>Laporan Pesanan</CardButton>
+    </div>
+  </Card>
+  <Card title="Pembelian & Audit" description="Analisis pengadaan and audit." icon={<History />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-pembelian" icon={<ClipboardList />}>Analisis Pembelian</CardButton>
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/laporan-audit/jurnal-audit" icon={<ShieldCheck />}>Jurnal Audit</CardButton>
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/laporan-audit/neraca-saldo" icon={<FileText />}>Neraca Saldo</CardButton>
+    </div>
+  </Card>
 </Cards>

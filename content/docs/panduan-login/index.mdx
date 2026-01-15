@@ -10,16 +10,11 @@ Keamanan akses adalah prioritas utama. Pelajari cara melakukan login yang benar,
 ### Panduan Akses
 
 <Cards>
-  <Card
-    title="Login Administrator"
-    description="Panduan masuk untuk pengelola sistem dan database."
-    href="/docs/panduan-login/login-admin.mdx"
-    icon={<Settings />}
-  />
-  <Card
-    title="Login Role Lainnya"
-    description="Akses untuk Guru, Musyrif, Orang Tua, dan Petugas Keamanan."
-    href="/docs/setup-and-konfigurasi/panduan-login"
-    icon={<UserCheck />}
-  />
+  <Card title="Akses & Keamanan" description="Panduan login and reset password." icon={<UserCheck />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/panduan-login/login-admin" icon={<ShieldCheck />}>Login Administrator</CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/panduan-login" icon={<Users />}>Login Role Lainnya</CardButton>
+      <CardButton href="/docs/utility-and-penanganan-khusus/reset-password" icon={<History />}>Reset Password</CardButton>
+    </div>
+  </Card>
 </Cards>

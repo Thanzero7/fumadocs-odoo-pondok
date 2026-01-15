@@ -10,22 +10,18 @@ Bagian ini berisi panduan untuk fungsi-fungsi pendukung sistem seperti import/ex
 ### Alat & Panduan
 
 <Cards>
-  <Card
-    title="Export & Import Data"
-    description="Cara melakukan migrasi dan pencadangan data melalui file CSV/Excel."
-    href="/docs/utility-and-penanganan-khusus/export-and-import-data.mdx"
-    icon={<ClipboardList />}
-  />
-  <Card
-    title="Reset Password"
-    description="Panduan pemulihan kata sandi baik oleh admin maupun via email."
-    href="/docs/utility-and-penanganan-khusus/reset-password"
-    icon={<UserCheck />}
-  />
-  <Card
-    title="Konfigurasi SMTP"
-    description="Pengaturan pengiriman email sistem menggunakan Gmail SMTP."
-    href="/docs/utility-and-penanganan-khusus/smtp-gmail.mdx"
-    icon={<Monitor />}
-  />
+  <Card title="Manajemen Data & Email" description="Alat pendukung operasional sistem." icon={<Settings />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/utility-and-penanganan-khusus/export-and-import-data" icon={<Database />}>Export/Import Data</CardButton>
+      <CardButton href="/docs/utility-and-penanganan-khusus/smtp-gmail" icon={<Monitor />}>SMTP Gmail</CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/akuntansi" icon={<Settings />}>Setting Lanjutan</CardButton>
+    </div>
+  </Card>
+  <Card title="Keamanan & Akses" description="Penanganan akses and password." icon={<ShieldCheck />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/utility-and-penanganan-khusus/reset-password/reset-password-oleh-administrator" icon={<UserCheck />}>Reset oleh Admin</CardButton>
+      <CardButton href="/docs/utility-and-penanganan-khusus/reset-password/reset-password-via-gmail" icon={<Monitor />}>Reset via Gmail</CardButton>
+      <CardButton href="/docs/panduan-login" icon={<UserCheck />}>Panduan Login</CardButton>
+    </div>
+  </Card>
 </Cards>

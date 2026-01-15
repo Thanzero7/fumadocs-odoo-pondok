@@ -10,40 +10,46 @@ Master Data adalah pondasi dari sistem Odoo Pesantren. Pastikan data dasar seper
 ### Kategori Master Data
 
 <Cards>
-  <Card
-    title="Data Operasional"
-    description="Kelola data Santri, Guru, Musyrif, Orang Tua, dan Keamanan."
-    href="/docs/master-data/data-operasional"
-    icon={<ClipboardList />}
-  />
-  <Card
-    title="Data Akademik & Sekolah"
-    description="Jadwal, Mata Pelajaran, Ruang Kelas, dan Kurikulum."
-    href="/docs/master-data/data-akademik-sekolah"
-    icon={<BookOpen />}
-  />
-  <Card
-    title="Data Kepesantrenan"
-    description="Manajemen hafalan (Tahfidz/Tahsin), Mutaba'ah, dan Pelanggaran."
-    href="/docs/master-data/data-kepesantrenan"
-    icon={<Activity />}
-  />
-  <Card
-    title="Data Keuangan & Produk"
-    description="Komponen biaya, produk operasional, dan data pemasok."
-    href="/docs/master-data/data-keuangan-and-produk"
-    icon={<CreditCard />}
-  />
-  <Card
-    title="Data Kamar & Halaqah"
-    description="Pengaturan asrama, kamar santri, dan kelompok halaqah."
-    href="/docs/master-data/data-kamar-santri-and-halaqah"
-    icon={<Home />}
-  />
-  <Card
-    title="Data Referensi Umum"
-    description="Data wilayah (Kecamatan/Kota), Pekerjaan, dan Pendidikan."
-    href="/docs/master-data/data-referensi-umum"
-    icon={<Database />}
-  />
+  <Card title="Data Operasional" description="Kelola data SDM pesantren." icon={<ClipboardList />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-operasional/santri" icon={<Users />}>Data Santri</CardButton>
+      <CardButton href="/docs/master-data/data-operasional/guru" icon={<GraduationCap />}>Data Guru</CardButton>
+      <CardButton href="/docs/master-data/data-operasional/musyrif" icon={<UserCheck />}>Data Musyrif</CardButton>
+    </div>
+  </Card>
+  <Card title="Data Akademik & Sekolah" description="Konfigurasi KBM and kelas." icon={<BookOpen />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-akademik-sekolah/jadwal-pelajaran" icon={<History />}>Jadwal Pelajaran</CardButton>
+      <CardButton href="/docs/master-data/data-akademik-sekolah/mata-pelajaran" icon={<BookOpen />}>Mata Pelajaran</CardButton>
+      <CardButton href="/docs/master-data/data-akademik-sekolah/ruang-kelas" icon={<Home />}>Ruang Kelas</CardButton>
+    </div>
+  </Card>
+  <Card title="Data Kepesantrenan" description="Hafalan, mutaba'ah, and disiplin." icon={<Activity />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-kepesantrenan/tahfidz-and-tahsin/al-quran" icon={<BookOpen />}>Tahfidz & Tahsin</CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/kepengasuhan/mutabaah" icon={<Activity />}>Data Mutaba'ah</CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/pelanggaran/jenis-pelanggaran" icon={<ShieldCheck />}>Pelanggaran</CardButton>
+    </div>
+  </Card>
+  <Card title="Data Keuangan & Produk" description="Komponen biaya and inventaris." icon={<CreditCard />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-keuangan-and-produk/komponen-biaya" icon={<CreditCard />}>Komponen Biaya</CardButton>
+      <CardButton href="/docs/master-data/data-keuangan-and-produk/produk" icon={<Box />}>Data Produk</CardButton>
+      <CardButton href="/docs/master-data/data-keuangan-and-produk/pemasok" icon={<Users />}>Data Pemasok</CardButton>
+    </div>
+  </Card>
+  <Card title="Data Kamar & Halaqah" description="Pengaturan hunian and halaqah." icon={<Home />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-kamar-santri-and-halaqah/kamar-santri" icon={<Home />}>Kamar Santri</CardButton>
+      <CardButton href="/docs/master-data/data-kamar-santri-and-halaqah/halaqah" icon={<Users />}>Data Halaqah</CardButton>
+      <CardButton href="/docs/master-data/data-operasional/santri" icon={<History />}>Penempatan</CardButton>
+    </div>
+  </Card>
+  <Card title="Data Referensi Umum" description="Wilayah and informasi dasar." icon={<Database />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-referensi-umum/provinsi" icon={<Database />}>Data Provinsi</CardButton>
+      <CardButton href="/docs/master-data/data-referensi-umum/kota" icon={<Database />}>Data Kota</CardButton>
+      <CardButton href="/docs/master-data/data-referensi-umum/kecamatan" icon={<Database />}>Data Kecamatan</CardButton>
+    </div>
+  </Card>
 </Cards>

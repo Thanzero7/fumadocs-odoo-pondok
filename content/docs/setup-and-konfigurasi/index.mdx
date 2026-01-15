@@ -10,22 +10,25 @@ Sebelum menggunakan modul operasional, pastikan sistem telah diatur dengan benar
 ### Langkah Konfigurasi
 
 <Cards>
-  <Card
-    title="Alur Setup Sistem"
-    description="Urutan pengaturan mulai dari Akuntansi hingga Point of Sale."
-    href="/docs/setup-and-konfigurasi/alur-setup-sistem"
-    icon={<Wrench />}
-  />
-  <Card
-    title="Role & Hak Akses"
-    description="Pengaturan izin untuk Admin, Guru, Musyrif, dan Orang Tua."
-    href="/docs/setup-and-konfigurasi/role-and-hak-akses-pengguna"
-    icon={<UserCheck />}
-  />
-  <Card
-    title="Panduan Login"
-    description="Cara akses masuk pertama kali untuk setiap pengguna."
-    href="/docs/setup-and-konfigurasi/panduan-login"
-    icon={<Monitor />}
-  />
+  <Card title="Alur Setup Sistem" description="Urutan pengaturan awal sistem." icon={<Wrench />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/tahun-ajaran" icon={<History />}>Tahun Ajaran</CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/jenjang-pendidikan" icon={<GraduationCap />}>Jenjang Pendidikan</CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/struktur-organisasi" icon={<Users />}>Struktur Organisasi</CardButton>
+    </div>
+  </Card>
+  <Card title="Role & Hak Akses" description="Pengaturan izin pengguna sistem." icon={<UserCheck />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/setup-and-konfigurasi/role-and-hak-akses-pengguna/administrator" icon={<ShieldCheck />}>Role Admin</CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/role-and-hak-akses-pengguna/guru" icon={<GraduationCap />}>Role Guru</CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/role-and-hak-akses-pengguna/musyrif" icon={<UserCheck />}>Role Musyrif</CardButton>
+    </div>
+  </Card>
+  <Card title="Panduan Login" description="Cara akses masuk pertama kali." icon={<Monitor />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/setup-and-konfigurasi/panduan-login/login-admin" icon={<UserCheck />}>Login Admin</CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/panduan-login/login-guru" icon={<UserCheck />}>Login Guru</CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/panduan-login/login-orang-tua" icon={<Users />}>Login Wali</CardButton>
+    </div>
+  </Card>
 </Cards>

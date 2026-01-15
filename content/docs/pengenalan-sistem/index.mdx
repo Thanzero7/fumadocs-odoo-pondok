@@ -10,16 +10,11 @@ Selamat datang di modul **Pengenalan Sistem**! Di bagian ini, kita akan membahas
 ### Jelajahi Topik
 
 <Cards>
-  <Card
-    title="Gambaran Umum"
-    description="Pelajari modul-modul utama dan peran pengguna dalam sistem."
-    href="/docs/pengenalan-sistem/gambaran-umum"
-    icon={<LayoutDashboard />}
-  />
-  <Card
-    title="Tampilan Sistem (UI/UX)"
-    description="Panduan navigasi dan pengenalan antarmuka pengguna."
-    href="/docs/pengenalan-sistem/tampilan-sistem-ui-ux"
-    icon={<Monitor />}
-  />
+  <Card title="Konsep & Antarmuka" description="Pelajari dasar sistem Odoo Pesantren." icon={<Album />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/pengenalan-sistem/gambaran-umum" icon={<LayoutDashboard />}>Gambaran Umum</CardButton>
+      <CardButton href="/docs/pengenalan-sistem/tampilan-sistem-ui-ux" icon={<Monitor />}>Tampilan UI/UX</CardButton>
+      <CardButton href="/docs/panduan-login" icon={<UserCheck />}>Akses Sistem</CardButton>
+    </div>
+  </Card>
 </Cards>

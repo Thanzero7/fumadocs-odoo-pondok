@@ -11,40 +11,25 @@ Jelajahi fitur-fitur unggulan kami mulai dari pengelolaan siswa dan jadwal pelaj
 ### Mulai Menjelajah
 
 <Cards>
-  <Card
-    title="Pengenalan Sistem"
-    description="Pelajari konsep dasar dan antarmuka sistem."
-    href="/docs/pengenalan-sistem"
-    icon={<Album />}
-  />
-  <Card
-    title="Panduan Login"
-    description="Cara mengakses sistem untuk berbagai role pengguna."
-    href="/docs/panduan-login"
-    icon={<UserCheck />}
-  />
-  <Card
-    title="Setup & Konfigurasi"
-    description="Langkah awal pengaturan sistem dan hak akses."
-    href="/docs/setup-and-konfigurasi"
-    icon={<Settings />}
-  />
-  <Card
-    title="Master Data"
-    description="Pengelolaan data referensi dan informasi dasar."
-    href="/docs/master-data"
-    icon={<Database />}
-  />
-  <Card
-    title="Aktivitas Modul"
-    description="Panduan operasional untuk setiap departemen."
-    href="/docs/aktivitas-modul"
-    icon={<Activity />}
-  />
-  <Card
-    title="Dashboard & Laporan"
-    description="Monitoring data dan analisis performa."
-    href="/docs/dashboard"
-    icon={<LayoutDashboard />}
-  />
+  <Card title="Pengenalan & Setup" description="Dasar sistem and konfigurasi." icon={<Settings />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/pengenalan-sistem" icon={<Album />}>Pengenalan Sistem</CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi" icon={<Settings />}>Setup & Konfigurasi</CardButton>
+      <CardButton href="/docs/panduan-login" icon={<UserCheck />}>Panduan Login</CardButton>
+    </div>
+  </Card>
+  <Card title="Data & Operasional" description="Manajemen data and aktivitas." icon={<Activity />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data" icon={<Database />}>Master Data</CardButton>
+      <CardButton href="/docs/aktivitas-modul" icon={<Activity />}>Aktivitas Modul</CardButton>
+      <CardButton href="/docs/utility-and-penanganan-khusus" icon={<Wrench />}>Utility</CardButton>
+    </div>
+  </Card>
+  <Card title="Monitoring & Laporan" description="Dashboard and analisis data." icon={<LayoutDashboard />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/dashboard" icon={<LayoutDashboard />}>Dashboard</CardButton>
+      <CardButton href="/docs/data-riwayat" icon={<History />}>Data Riwayat</CardButton>
+      <CardButton href="/docs/laporan-laporan" icon={<FileText />}>Laporan</CardButton>
+    </div>
+  </Card>
 </Cards>

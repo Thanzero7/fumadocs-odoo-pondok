@@ -10,28 +10,32 @@ Odoo Pesantren menyimpan seluruh jejak aktivitas untuk memastikan transparansi d
 ### Kategori Riwayat
 
 <Cards>
-  <Card
-    title="Riwayat Absensi"
-    description="Rekapitulasi kehadiran santri, tahfidz, dan ekstrakurikuler."
-    href="/docs/data-riwayat/riwayat-absensi"
-    icon={<ClipboardList />}
-  />
-  <Card
-    title="Riwayat Aktivitas Santri"
-    description="Catatan pelanggaran, izin, prestasi, dan kesehatan santri."
-    href="/docs/data-riwayat/riwayat-aktivitas-santri"
-    icon={<Activity />}
-  />
-  <Card
-    title="Riwayat Keuangan"
-    description="Laporan transaksi dompet, tagihan, dan pembayaran."
-    href="/docs/data-riwayat/riwayat-keuangan"
-    icon={<CreditCard />}
-  />
-  <Card
-    title="Riwayat Stok & Pembelian"
-    description="Log pergerakan barang dan pesanan pembelian."
-    href="/docs/data-riwayat/riwayat-operasi-stok-persediaan"
-    icon={<Box />}
-  />
+  <Card title="Riwayat Absensi" description="Rekapitulasi kehadiran santri." icon={<ClipboardList />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-absensi/absensi-santri" icon={<UserCheck />}>Absensi Harian</CardButton>
+      <CardButton href="/docs/data-riwayat/riwayat-absensi/absensi-tahfidz" icon={<BookOpen />}>Absensi Tahfidz</CardButton>
+      <CardButton href="/docs/data-riwayat/riwayat-absensi/absensi-ekskul" icon={<Activity />}>Absensi Ekskul</CardButton>
+    </div>
+  </Card>
+  <Card title="Riwayat Aktivitas Santri" description="Log kedisiplinan and kesehatan." icon={<Activity />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-aktivitas-santri/pelanggaran" icon={<ShieldCheck />}>Pelanggaran</CardButton>
+      <CardButton href="/docs/data-riwayat/riwayat-aktivitas-santri/perizinan-santri" icon={<UserCheck />}>Perizinan</CardButton>
+      <CardButton href="/docs/data-riwayat/riwayat-aktivitas-santri/mutabaah-harian" icon={<History />}>Mutaba'ah</CardButton>
+    </div>
+  </Card>
+  <Card title="Riwayat Keuangan" description="Transaksi and tagihan santri." icon={<CreditCard />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-keuangan/pembayaran" icon={<CreditCard />}>Pembayaran</CardButton>
+      <CardButton href="/docs/data-riwayat/riwayat-keuangan/tagihan-santri" icon={<FileText />}>Tagihan Santri</CardButton>
+      <CardButton href="/docs/data-riwayat/riwayat-keuangan/transaksi-dompet-santri" icon={<Database />}>Dompet Santri</CardButton>
+    </div>
+  </Card>
+  <Card title="Riwayat Stok & Pembelian" description="Log logistik and pengadaan." icon={<Box />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-operasi-stok-persediaan/penerimaan" icon={<Box />}>Penerimaan Barang</CardButton>
+      <CardButton href="/docs/data-riwayat/riwayat-operasi-stok-persediaan/pengiriman" icon={<Box />}>Pengiriman Barang</CardButton>
+      <CardButton href="/docs/data-riwayat/riwayat-pembelian/pesanan-pembelian" icon={<FileText />}>Pesanan Pembelian</CardButton>
+    </div>
+  </Card>
 </Cards>
