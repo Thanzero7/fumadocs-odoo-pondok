@@ -6,9 +6,27 @@ icon: GraduationCap
 
 Selamat datang di panduan Modul Guru. Modul ini dirancang untuk memudahkan Guru dalam mengelola absensi, penilaian, dan aktivitas kepesantrenan santri secara digital.
 
-### Fitur Utama
+### Kategori Fitur Utama
 
-- **Absensi Akademik**: Pencatatan kehadiran santri di kelas.
-- **Penugasan & Penilaian**: Pengelolaan tugas dan input nilai santri.
-- **Absensi Kepesantrenan**: Monitoring kehadiran santri dalam kegiatan pesantren (Tahfidz, Shalat, dll).
-- **Penilaian Kepesantrenan**: Evaluasi perkembangan karakter dan hafalan santri.
+<Cards>
+  <Card title="Absensi Akademik" description="Pencatatan kehadiran santri di kelas." icon={<UserCheck />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-guru/absensi-akademik" icon={<ClipboardList />}>Kelola Absensi Akademik</CardButton>
+    </div>
+  </Card>
+  <Card title="Penugasan & Penilaian Akademik" description="Pengelolaan tugas dan input nilai santri." icon={<FileText />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-guru/penugasan-and-penilaian-akademik" icon={<ClipboardList />}>Kelola Penugasan & Penilaian</CardButton>
+    </div>
+  </Card>
+  <Card title="Absensi Kepesantrenan" description="Monitoring kehadiran santri dalam kegiatan pesantren." icon={<BookOpen />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-guru/absensi-kepesantrenan" icon={<ClipboardList />}>Kelola Absensi Kepesantrenan</CardButton>
+    </div>
+  </Card>
+  <Card title="Penilaian Kepesantrenan" description="Evaluasi perkembangan karakter dan hafalan santri." icon={<ShieldCheck />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-guru/penilaian-kepesantrenan" icon={<ClipboardList />}>Kelola Penilaian Kepesantrenan</CardButton>
+    </div>
+  </Card>
+</Cards>
