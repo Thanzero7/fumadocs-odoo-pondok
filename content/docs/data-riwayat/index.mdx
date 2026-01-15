@@ -1,7 +1,37 @@
 ---
 title: Data Riwayat
+description: Rekaman seluruh aktivitas dan transaksi dalam sistem sebagai referensi audit.
 order: 5
-icon: Clock
+icon: History
 ---
 
-Dokumentasi tentang riwayat data dan log.
+Odoo Pesantren menyimpan seluruh jejak aktivitas untuk memastikan transparansi dan akuntabilitas. Di bagian ini, Anda dapat meninjau riwayat absensi, keuangan, hingga pergerakan stok.
+
+### Kategori Riwayat
+
+<Cards>
+  <Card
+    title="Riwayat Absensi"
+    description="Rekapitulasi kehadiran santri, tahfidz, dan ekstrakurikuler."
+    href="/docs/data-riwayat/riwayat-absensi"
+    icon={<ClipboardList />}
+  />
+  <Card
+    title="Riwayat Aktivitas Santri"
+    description="Catatan pelanggaran, izin, prestasi, dan kesehatan santri."
+    href="/docs/data-riwayat/riwayat-aktivitas-santri"
+    icon={<Activity />}
+  />
+  <Card
+    title="Riwayat Keuangan"
+    description="Laporan transaksi dompet, tagihan, dan pembayaran."
+    href="/docs/data-riwayat/riwayat-keuangan"
+    icon={<CreditCard />}
+  />
+  <Card
+    title="Riwayat Stok & Pembelian"
+    description="Log pergerakan barang dan pesanan pembelian."
+    href="/docs/data-riwayat/riwayat-operasi-stok-persediaan"
+    icon={<Box />}
+  />
+</Cards>
