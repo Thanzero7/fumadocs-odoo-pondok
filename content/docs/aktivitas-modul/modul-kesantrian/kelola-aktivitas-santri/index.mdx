@@ -5,3 +5,26 @@ icon: Activity
 ---
 
 Pusat pengelolaan seluruh catatan aktivitas santri di luar kegiatan belajar mengajar formal.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { User } from 'lucide-react';
+
+<Cards>
+  <Card title="Kesehatan santri" description="Memantau kesehatan santri selama di pondok." icon={<User />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-keamanan/santri-keluar-masuk-pesantren" icon={<User />}> Kelola Santri Keluar Masuk </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Mutasi saldo santri" description="Memantau keuangan santri selama di pondok" icon={<User />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-keamanan/santri-keluar-masuk-pesantren" icon={<User />}> Kelola Santri Keluar Masuk </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Pelanggaran santri" description="Memantau pelanggaran santri selama di pondok." icon={<User />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-keamanan/santri-keluar-masuk-pesantren" icon={<User />}> Kelola Santri Keluar Masuk </CardButton>
+    </div>
+  </Card>
+</Cards>

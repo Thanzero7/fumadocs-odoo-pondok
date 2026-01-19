@@ -5,3 +5,32 @@ icon: ClipboardList
 ---
 
 Menyediakan akses ke data masa lalu mengenai kehadiran santri dalam kegiatan akademik, kepesantrenan, dan ekstrakurikuler.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { User, Clipboard } from 'lucide-react';
+
+<Cards>
+  <Card title="Absensi Santri" description="Riwayat kehadiran santri di kelas." icon={<User />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-absensi/absensi-santri" icon={<User />}> Absensi Santri </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Absensi Ekskul" description="Riwayat kehadiran kegiatan ekstrakurikuler." icon={<Clipboard />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-absensi/absensi-ekskul" icon={<Clipboard />}> Absensi Ekskul </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Absensi Tahfidz" description="Riwayat kehadiran halaqah tahfidz." icon={<Clipboard />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-absensi/absensi-tahfidz" icon={<Clipboard />}> Absensi Tahfidz </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Absensi Tahsin" description="Riwayat kehadiran halaqah tahsin." icon={<Clipboard />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-absensi/absensi-tahsin" icon={<Clipboard />}> Absensi Tahsin </CardButton>
+    </div>
+  </Card>
+</Cards>

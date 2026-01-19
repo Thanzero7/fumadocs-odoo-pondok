@@ -6,8 +6,33 @@ icon: ClipboardList
 
 Modul Musyrif membantu pengasuh asrama dalam memantau aktivitas santri secara real-time, memberikan perizinan, serta mencatat perkembangan karakter santri.
 
-### Fitur Utama
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { ClipboardList, FileText, ArrowRightLeft, CreditCard } from 'lucide-react';
 
-- **Perizinan Santri**: Pengajuan dan persetujuan izin keluar pesantren.
-- **Pencatatan Aktivitas**: Log harian kedisiplinan dan mutaba'ah di asrama.
-- **Transfer Saldo**: Fasilitas pengiriman uang saku antar santri atau dari wali.
+<Cards>
+  <Card title="Pencatatan Aktivitas" description="Log harian kedisiplinan dan mutaba'ah." icon={<ClipboardList />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-musyrif/pencatatan-aktivitas" icon={<ClipboardList />}> Pencatatan Aktivitas </CardButton>
+    </div>
+  </Card>
+  <Card title="Mengajukan Izin Santri" description="Ajukan izin keluar untuk santri." icon={<FileText />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-musyrif/mengajukan-izin-santri" icon={<FileText />}> Mengajukan Izin Santri </CardButton>
+    </div>
+  </Card>
+  <Card title="Pengelolaan Izin Santri" description="Kelola persetujuan izin santri." icon={<FileText />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-musyrif/pengelolaan-izin-santri" icon={<FileText />}> Pengelolaan Izin Santri </CardButton>
+    </div>
+  </Card>
+  <Card title="Mutasi Saldo" description="Catat mutasi saldo manual." icon={<ArrowRightLeft />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-musyrif/mutasi-saldo" icon={<ArrowRightLeft />}> Mutasi Saldo</CardButton>
+    </div>
+  </Card>
+  <Card title="Transfer Saldo Santri" description="Kirim uang saku antar santri." icon={<CreditCard />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-musyrif/transfer-saldo-santri" icon={<CreditCard />}> Transfer Saldo Santri </CardButton>
+    </div>
+  </Card>
+</Cards>

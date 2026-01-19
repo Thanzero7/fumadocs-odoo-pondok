@@ -5,3 +5,20 @@ icon: UserCheck
 ---
 
 Rekapitulasi komprehensif kehadiran santri untuk memantau keaktifan belajar and kegiatan sekolah lainnya.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { User, Clipboard } from 'lucide-react';
+
+<Cards>
+  <Card title="Cek Absensi Santri" description="Rekap kehadiran siswa di kelas." icon={<User />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-sekolah/cek-absensi/cek-absensi-santri" icon={<User />}> Cek Absensi Santri </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Cek Absensi Ekskul" description="Rekap kehadiran siswa di ekstrakurikuler." icon={<Clipboard />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-sekolah/cek-absensi/cek-absensi-ekskul" icon={<Clipboard />}> Cek Absensi Ekskul </CardButton>
+    </div>
+  </Card>
+</Cards>

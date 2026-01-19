@@ -5,3 +5,32 @@ icon: CreditCard
 ---
 
 Arsip seluruh aktivitas finansial santri, memungkinkan penelusuran histori saldo dan bukti pembayaran secara mendetail.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { CreditCard, User, File } from 'lucide-react';
+
+<Cards>
+  <Card title="Pembayaran" description="Riwayat transaksi pembayaran masuk dan keluar." icon={<File />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-keuangan/pembayaran" icon={<File />}> Pembayaran </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Tagihan Pemasok" description="Riwayat tagihan dari vendor/pemasok." icon={<CreditCard />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-keuangan/tagihan-pemasok" icon={<CreditCard />}> Tagihan Pemasok </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Tagihan Santri" description="Riwayat tagihan pembayaran santri." icon={<User />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-keuangan/tagihan-santri" icon={<User />}> Tagihan Santri </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Transaksi Dompet Santri" description="Log aktivitas keuangan dompet digital santri." icon={<User />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-keuangan/transaksi-dompet-santri" icon={<User />}> Transaksi Dompet Santri </CardButton>
+    </div>
+  </Card>
+</Cards>

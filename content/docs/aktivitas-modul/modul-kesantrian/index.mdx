@@ -6,7 +6,18 @@ icon: Activity
 
 Modul Kesantrian berfokus pada pemantauan dan pengelolaan kehidupan sehari-hari santri di lingkungan pesantren, mulai dari kedisiplinan hingga kesehatan.
 
-### Fitur Utama
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Activity, BookOpen } from 'lucide-react';
 
-- **Kepesantrenan**: Monitoring aktivitas harian dan mutaba'ah.
-- **Kelola Aktivitas**: Pencatatan pelanggaran, prestasi, perizinan, dan rekam medis santri.
+<Cards>
+  <Card title="Kelola Aktivitas Santri" description="Pencatatan pelanggaran, prestasi, dan perizinan." icon={<Activity />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-kesantrian/kelola-aktivitas-santri" icon={<Activity />}> Kelola Aktivitas Santri </CardButton>
+    </div>
+  </Card>
+  <Card title="Kepesantrenan" description="Monitoring aktivitas harian dan mutaba'ah." icon={<BookOpen />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-kesantrian/kepesantrenan" icon={<BookOpen />}> Kepesantrenan </CardButton>
+    </div>
+  </Card>
+</Cards>

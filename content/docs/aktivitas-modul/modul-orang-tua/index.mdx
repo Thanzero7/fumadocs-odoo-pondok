@@ -6,9 +6,48 @@ icon: Users
 
 Modul Orang Tua memberikan akses bagi wali santri untuk memantau kemajuan anak mereka secara mendalam dan melakukan administrasi keuangan dengan mudah.
 
-### Fitur Utama
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { GraduationCap, Activity, Receipt, Megaphone, CreditCard, FileText } from 'lucide-react';
 
-- **Monitoring Akademik**: Cek kehadiran kelas dan nilai ujian santri.
-- **Monitoring Aktivitas**: Pantau catatan harian (mutaba'ah) dan perilaku santri.
-- **Monitoring Tagihan**: Informasi biaya sekolah dan log pembayaran.
-- **Cek Informasi**: Akses pengumuman penting dari pihak pesantren.
+<Cards>
+  <Card title="Monitoring Akademik" description="Cek kehadiran dan nilai ujian." icon={<GraduationCap />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-orang-tua/monitoring-akademik" icon={<GraduationCap />}> Monitoring Akademik </CardButton>
+    </div>
+  </Card>
+  <Card title="Monitoring Aktivitas Santri" description="Pantau catatan perilaku harian." icon={<Activity />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-orang-tua/monitoring-aktivitas-santri" icon={<Activity />}> Monitoring Aktivitas Santri </CardButton>
+    </div>
+  </Card>
+  <Card title="Monitoring Kepesantrenan" description="Cek hafalan dan kegiatan asrama." icon={<Activity />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-orang-tua/monitoring-kepesantrenan" icon={<Activity />}>Monitoring Kepesantrenan </CardButton>
+    </div>
+  </Card>
+  <Card title="Monitoring Tagihan" description="Informasi biaya dan log pembayaran." icon={<Receipt />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-orang-tua/monitoring-tagihan" icon={<Receipt />}> Monitoring Tagihan </CardButton>
+    </div>
+  </Card>
+  <Card title="Cek Informasi & Pengumuman" description="Akses berita dari pesantren." icon={<Megaphone />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-orang-tua/cek-informasi-and-pengumuman" icon={<Megaphone />}> Cek Informasi & Pengumuman </CardButton>
+    </div>
+  </Card>
+  <Card title="Limit Saldo Santri" description="Lihat batasan saldo jajan anak." icon={<CreditCard />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-orang-tua/limit-saldo-santri" icon={<CreditCard />}> Limit Saldo Santri </CardButton>
+    </div>
+  </Card>
+  <Card title="Pengajuan Izin Santri" description="Ajukan perizinan secara online." icon={<FileText />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-orang-tua/pengajuan-izin-santri" icon={<FileText />}> Pengajuan Izin Santri </CardButton>
+    </div>
+  </Card>
+  <Card title="Tambah Pengumuman" description="Buat pengumuman (jika ada akses)." icon={<Megaphone />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-orang-tua/tambah-pengumuman" icon={<Megaphone />}> Tambah Pengumuman </CardButton>
+    </div>
+  </Card>
+</Cards>

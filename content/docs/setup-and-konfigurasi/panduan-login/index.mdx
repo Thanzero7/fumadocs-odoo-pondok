@@ -5,3 +5,18 @@ icon: UserCheck
 ---
 
 Panduan ini berisi langkah-langkah teknis untuk masuk ke sistem administrator and pengelolaan database pesantren.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { UserCog, GraduationCap, UserCheck, Users, Shield } from 'lucide-react';
+
+<Cards>
+  <Card title="Panduan Akses Masuk" description="Cara login untuk berbagai peran pengguna." icon={<UserCog />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/setup-and-konfigurasi/panduan-login/login-admin" icon={<UserCog />}> Login Administrator </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/panduan-login/login-guru" icon={<GraduationCap />}> Login Guru </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/panduan-login/login-musyrif" icon={<UserCheck />}> Login Musyrif </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/panduan-login/login-orang-tua" icon={<Users />}> Login Orang Tua </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/panduan-login/login-petugas-keamanan" icon={<Shield />}> Login Keamanan </CardButton>
+    </div>
+  </Card>
+</Cards>

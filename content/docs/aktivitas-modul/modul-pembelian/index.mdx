@@ -5,3 +5,19 @@ icon: Box
 ---
 
 Modul Pembelian memfasilitasi proses pengadaan barang untuk kebutuhan pesantren, mulai dari permintaan pembelian hingga penerimaan barang dari pemasok.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { ShoppingCart, Receipt } from 'lucide-react';
+
+<Cards>
+  <Card title="Order Pembelian Barang" description="Buat pesanan barang baru ke vendor." icon={<ShoppingCart />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-pembelian/order-pembelian-barang" icon={<ShoppingCart />}> Order Pembelian Barang </CardButton>
+    </div>
+  </Card>
+  <Card title="Catat Tagihan Pemasok" description="Input tagihan yang diterima dari vendor." icon={<Receipt />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-pembelian/catat-tagihan-pemasok" icon={<Receipt />}> Catat Tagihan Pemasok </CardButton>
+    </div>
+  </Card>
+</Cards>

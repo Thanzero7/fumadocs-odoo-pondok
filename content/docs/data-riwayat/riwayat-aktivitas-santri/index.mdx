@@ -5,3 +5,38 @@ icon: Activity
 ---
 
 Arsip aktivitas non-akademik santri yang mencakup catatan perilaku, kesehatan, dan perkembangan karakter dari waktu ke waktu.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { User, File, Siren } from 'lucide-react';
+
+<Cards>
+  <Card title="Kesehatan Santri" description="Riwayat pemeriksaan dan kondisi kesehatan santri." icon={<User />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-aktivitas-santri/kesehatan-santri" icon={<User />}> Kesehatan Santri </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Mutaba'ah Harian" description="Riwayat catatan aktivitas harian santri." icon={<File />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-aktivitas-santri/mutabaah-harian" icon={<File />}> Mutaba'ah Harian </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Pelanggaran" description="Riwayat pelanggaran dan tindakan disiplin." icon={<Siren />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-aktivitas-santri/pelanggaran" icon={<Siren />}> Pelanggaran </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Perizinan Santri" description="Riwayat perizinan keluar-masuk santri." icon={<User />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-aktivitas-santri/perizinan-santri" icon={<User />}> Perizinan Santri </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Prestasi Santri" description="Riwayat capaian prestasi santri." icon={<User />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-aktivitas-santri/prestasi-santri" icon={<User />}> Prestasi Santri </CardButton>
+    </div>
+  </Card>
+</Cards>

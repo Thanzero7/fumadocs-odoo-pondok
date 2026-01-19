@@ -5,3 +5,14 @@ icon: ShieldCheck
 ---
 
 Modul Keamanan membantu petugas keamanan pesantren dalam mencatat log harian tamu serta memantau pergerakan santri yang mendapatkan izin keluar/masuk.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { ShieldCheck } from 'lucide-react';
+
+<Cards>
+  <Card title="Santri Keluar Masuk Pesantren" description="Monitor dan catat log santri keluar masuk." icon={<ShieldCheck />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-keamanan/santri-keluar-masuk-pesantren" icon={<ShieldCheck />}> Kelola Santri Keluar Masuk </CardButton>
+    </div>
+  </Card>
+</Cards>

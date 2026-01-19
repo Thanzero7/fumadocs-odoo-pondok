@@ -5,3 +5,16 @@ icon: ShieldCheck
 ---
 
 Definisi parameter kedisiplinan untuk memastikan konsistensi dalam penegakan aturan pesantren.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { ShieldAlert, Gavel, FileWarning } from 'lucide-react';
+
+<Cards>
+  <Card title="Pelanggaran & Disiplin" description="Master data pelanggaran dan sanksi." icon={<ShieldAlert />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-kepesantrenan/pelanggaran/data-pelanggaran" icon={<FileWarning />}> Data Pelanggaran </CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/pelanggaran/jenis-pelanggaran" icon={<ShieldAlert />}> Jenis Pelanggaran </CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/pelanggaran/tindakan-disipliner" icon={<Gavel />}> Tindakan Disipliner </CardButton>
+    </div>
+  </Card>
+</Cards>

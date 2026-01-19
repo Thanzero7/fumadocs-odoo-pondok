@@ -5,3 +5,24 @@ icon: Database
 ---
 
 Menyediakan data referensi wilayah yang digunakan untuk melengkapi informasi alamat santri, pegawai, dan pemasok.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { MapPin, Briefcase, GraduationCap, FileText, Database, Map } from 'lucide-react';
+
+<Cards>
+  <Card title="Wilayah Geografis" description="Data provinsi, kota/kabupaten, dan kecamatan." icon={<Map />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-referensi-umum/provinsi" icon={<MapPin />}> Data Provinsi </CardButton>
+      <CardButton href="/docs/master-data/data-referensi-umum/kota" icon={<MapPin />}> Data Kota/Kabupaten </CardButton>
+      <CardButton href="/docs/master-data/data-referensi-umum/kecamatan" icon={<MapPin />}> Data Kecamatan </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Profil & Keterangan" description="Referensi pekerjaan, pendidikan, dan izin." icon={<Database />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-referensi-umum/pekerjaan" icon={<Briefcase />}> Data Pekerjaan </CardButton>
+      <CardButton href="/docs/master-data/data-referensi-umum/pendidikan" icon={<GraduationCap />}> Data Pendidikan </CardButton>
+      <CardButton href="/docs/master-data/data-referensi-umum/keterangan-izin" icon={<FileText />}> Jenis Keterangan Izin </CardButton>
+    </div>
+  </Card>
+</Cards>

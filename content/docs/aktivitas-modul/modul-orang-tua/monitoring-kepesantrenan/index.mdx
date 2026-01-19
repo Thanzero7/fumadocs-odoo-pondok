@@ -5,3 +5,20 @@ icon: BookOpen
 ---
 
 Laporan mendalam mengenai kemajuan santri dalam aspek spiritual and hafalan selama di pesantren.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Book } from 'lucide-react';
+
+<Cards>
+  <Card title="Tahfidz Al-Qur'an" description="Cek perkembangan hafalan Al-Qur'an anak." icon={<Book />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-orang-tua/monitoring-kepesantrenan/tahfidz-al-quran" icon={<Book />}> Tahfidz Al-Qur'an </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Tahsin Al-Qur'an" description="Monitor kemampuan membaca Al-Qur'an." icon={<Book />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-orang-tua/monitoring-kepesantrenan/tahsin-al-quran" icon={<Book />}> Tahsin Al-Qur'an </CardButton>
+    </div>
+  </Card>
+</Cards>

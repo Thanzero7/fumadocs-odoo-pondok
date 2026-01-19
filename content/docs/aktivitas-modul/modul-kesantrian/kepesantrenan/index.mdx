@@ -1,7 +1,30 @@
 ---
 title: Kepesantrenan
 description: Monitoring mutaba'ah harian and aktivitas asrama santri.
-icon: Home
+icon: House
 ---
 
 Data operasional harian mengenai kehidupan santri di asrama and ketaatan dalam beribadah.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { BookOpen, FileText, ClipboardList } from 'lucide-react';
+
+<Cards>
+  <Card title="Absensi & Tahfidz Al-Qur'an" description="Cek Absensi Tahfidz & Tahfidz Al-Qur'an" icon={<BookOpen />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-kesantrian/kepesantrenan/absensi-and-tahfidz-al-quran" icon={<BookOpen />}> Cek Absensi Tahfidz & Tahfidz Al-Quran</CardButton>
+    </div>
+  </Card>
+
+  <Card title="Absensi & Tahsin Al-Qur'an" description="Cek Absensi Tahsin & Tahsin Al-Quran" icon={<FileText />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-kesantrian/kepesantrenan/absensi-and-tahsin-al-quran" icon={<FileText />}> Cek Absensi Tahsin & Tahsin Al-Quran</CardButton>
+    </div>
+  </Card>
+
+  <Card title="Mutaba'ah Harian" description="Kelola Mutaba'ah Harian" icon={<ClipboardList />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-kesantrian/kepesantrenan/mutabaah-harian" icon={<ClipboardList />}> Kelola Mutaba'ah Harian</CardButton>
+    </div>
+  </Card>
+</Cards>

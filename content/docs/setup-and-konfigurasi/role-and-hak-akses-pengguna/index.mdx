@@ -5,3 +5,18 @@ icon: UserCheck
 ---
 
 Panduan pengaturan hak akses untuk memastikan setiap pengguna sistem hanya memiliki akses ke modul yang relevan dengan tugasnya.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { ShieldCheck, GraduationCap, UserCheck, Users, Shield } from 'lucide-react';
+
+<Cards>
+  <Card title="Hak Akses Pengguna" description="Konfigurasi izin dan peran pengguna sistem." icon={<ShieldCheck />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/setup-and-konfigurasi/role-and-hak-akses-pengguna/administrator" icon={<ShieldCheck />}> Administrator </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/role-and-hak-akses-pengguna/guru" icon={<GraduationCap />}> Guru Akademik </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/role-and-hak-akses-pengguna/musyrif" icon={<UserCheck />}> Musyrif </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/role-and-hak-akses-pengguna/orang-tua" icon={<Users />}> Orang Tua </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/role-and-hak-akses-pengguna/petugas-keamanan" icon={<Shield />}> Petugas Keamanan </CardButton>
+    </div>
+  </Card>
+</Cards>

@@ -5,3 +5,15 @@ icon: Monitor
 ---
 
 Pengaturan teknis untuk operasional kasir di berbagai unit usaha pesantren.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { ShoppingCart, Monitor, CreditCard } from 'lucide-react';
+
+<Cards>
+  <Card title="Konfigurasi Kasir" description="Pengaturan metode pembayaran dan sesi." icon={<ShoppingCart />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/point-of-sale/metode-pembayaran-pos" icon={<CreditCard />}> Metode Pembayaran POS </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/point-of-sale/sesi-point-of-sale" icon={<Monitor />}> Sesi Point of Sale </CardButton>
+    </div>
+  </Card>
+</Cards>

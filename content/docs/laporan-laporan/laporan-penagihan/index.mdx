@@ -5,3 +5,56 @@ icon: CreditCard
 ---
 
 Laporan komprehensif mengenai kesehatan finansial pesantren, mencakup audit jurnal dan posisi keuangan terkini.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { TrendingUp, Scale, File, ShieldCheck, History, ClipboardList } from 'lucide-react';
+
+<Cards>
+  <Card title="Laba & Rugi" description="Ringkasan pendapatan dan beban operasional." icon={<TrendingUp />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/laba-and-rugi" icon={<TrendingUp />}> Laba & Rugi </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Neraca" description="Posisi keuangan (aset, kewajiban, ekuitas)." icon={<Scale />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/neraca" icon={<Scale />}> Neraca </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Arus Kas" description="Laporan aliran kas masuk dan keluar." icon={<TrendingUp />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/arus-kas" icon={<TrendingUp />}> Arus Kas </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Buku Besar Mitra" description="Rincian transaksi piutang dan hutang dengan mitra." icon={<File />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/buku-besar-mitra" icon={<File />}> Buku Besar Mitra </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Umur Saldo Mitra" description="Analisis umur piutang dan hutang mitra." icon={<File />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/umur-saldo-mitra" icon={<File />}> Umur Saldo Mitra </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Laporan Audit" description="Jurnal penyesuaian dan log audit finansial." icon={<ShieldCheck />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/laporan-audit" icon={<ShieldCheck />}> Laporan Audit </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Laporan Harian" description="Rekapitulasi transaksi dan aktivitas harian." icon={<History />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/laporan-harian" icon={<History />}> Laporan Harian </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Manajemen Laporan" description="Laporan strategis untuk manajemen pesantren." icon={<ClipboardList />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/manajemen" icon={<ClipboardList />}> Manajemen Laporan </CardButton>
+    </div>
+  </Card>
+</Cards>

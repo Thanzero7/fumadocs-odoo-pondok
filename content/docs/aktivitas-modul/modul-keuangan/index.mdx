@@ -6,8 +6,34 @@ icon: CreditCard
 
 Modul Keuangan menyediakan alat untuk mengelola seluruh aspek finansial pesantren, memastikan transparansi dan kemudahan dalam administrasi biaya santri.
 
-### Fitur Utama
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { CreditCard, Wallet, FileText, Banknote, HandCoins } from 'lucide-react';
 
-- **Pembayaran Tagihan**: Proses pelunasan biaya pendidikan santri.
-- **Manajemen Uang Saku**: Kontrol saldo dan transaksi harian santri.
-- **Pencatatan Donasi**: Administrasi penerimaan sumbangan dan wakaf.
+<Cards>
+  <Card title="Limit Saldo Masal" description="Atur limit saldo untuk banyak santri sekaligus." icon={<CreditCard />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-keuangan/limit-saldo-masal" icon={<CreditCard />}> Limit Saldo Masal </CardButton>
+    </div>
+  </Card>
+  <Card title="Pembayaran Tagihan Santri" description="Proses pelunasan biaya pendidikan." icon={<Banknote />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-keuangan/pembayaran-tagihan-santri" icon={<Banknote />}> Pembayaran Tagihan Santri </CardButton>
+    </div>
+  </Card>
+  <Card title="Pencatatan Donasi" description="Administrasi penerimaan sumbangan." icon={<HandCoins />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-keuangan/pencatatan-donasi" icon={<HandCoins />}> Pencatatan Donasi </CardButton>
+    </div>
+  </Card>
+  <Card title="Penetapan Tagihan Santri" description="Buat tagihan baru untuk santri." icon={<FileText />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-keuangan/penetapan-tagihan-santri" icon={<FileText />}> Penetapan Tagihan Santri </CardButton>
+    </div>
+  </Card>
+  <Card title="Uang Saku" description="Manajemen saldo uang saku santri." icon={<Wallet />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-keuangan/uang-saku" icon={<Wallet />}> Uang Saku </CardButton>
+    </div>
+  </Card>
+</Cards>
+

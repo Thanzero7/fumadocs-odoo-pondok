@@ -5,3 +5,20 @@ icon: Box
 ---
 
 Arsip seluruh riwayat pengadaan logistik pesantren, dari pengajuan hingga pelunasan ke pemasok.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { File, ShoppingBag } from 'lucide-react';
+
+<Cards>
+  <Card title="Permintaan Penawaran" description="Riwayat permintaan penawaran ke pemasok." icon={<File />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-pembelian/permintaan-penawaran" icon={<File />}> Permintaan Penawaran </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Pesanan Pembelian" description="Riwayat pesanan pembelian yang telah dikonfirmasi." icon={<ShoppingBag />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-pembelian/pesanan-pembelian" icon={<ShoppingBag />}> Pesanan Pembelian </CardButton>
+    </div>
+  </Card>
+</Cards>

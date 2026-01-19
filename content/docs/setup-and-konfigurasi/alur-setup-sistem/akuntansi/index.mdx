@@ -5,3 +5,17 @@ icon: CreditCard
 ---
 
 Dasar pengaturan finansial untuk memastikan seluruh rekaman transaksi tercatat sesuai dengan standar akuntansi yang berlaku.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Calculator, Scroll, Banknote, Landmark } from 'lucide-react';
+
+<Cards>
+  <Card title="Konfigurasi Akuntansi" description="Setup dasar modul keuangan." icon={<Calculator />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/akuntansi/chart-of-account" icon={<Scroll />}> Chart of Account (CoA) </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/akuntansi/jurnal-akuntansi" icon={<Scroll />}> Jurnal Akuntansi </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/akuntansi/mata-uang" icon={<Banknote />}> Mata Uang </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/akuntansi/pajak" icon={<Landmark />}> Pajak </CardButton>
+    </div>
+  </Card>
+</Cards>

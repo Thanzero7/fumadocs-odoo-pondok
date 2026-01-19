@@ -5,3 +5,26 @@ icon: Monitor
 ---
 
 Laporan mendetail mengenai seluruh transaksi yang terjadi di unit-unit usaha pesantren yang menggunakan sistem kasir POS.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { ShoppingCart, FileText } from 'lucide-react';
+
+<Cards>
+  <Card title="Detail Penjualan" description="Laporan rincian penjualan per POS." icon={<ShoppingCart />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-point-of-sale/detail-penjualan" icon={<ShoppingCart />}> Detail Penjualan </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Laporan Pesanan" description="Analisis dan daftar pesanan POS." icon={<FileText />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-point-of-sale/laporan-pesanan" icon={<FileText />}> Laporan Pesanan </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Laporan Sesi" description="Ringkasan transaksi per sesi kasir." icon={<FileText />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-point-of-sale/laporan-sesi" icon={<FileText />}> Laporan Sesi </CardButton>
+    </div>
+  </Card>
+</Cards>

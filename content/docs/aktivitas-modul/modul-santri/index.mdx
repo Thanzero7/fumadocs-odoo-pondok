@@ -6,6 +6,18 @@ icon: Users
 
 Modul Santri mengelola data fundamental santri, termasuk profil lengkap, riwayat kesehatan, serta pengaturan akun untuk akses sistem mandiri.
 
-### Fitur Utama
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { User, CreditCard } from 'lucide-react';
 
-- **Akun Santri**: Pengaturan kredensial login dan profil publik santri.
+<Cards>
+  <Card title="Akun Santri" description="Manajemen profil dan kredensial login." icon={<User />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-santri/akun-santri" icon={<User />}> Akun Santri </CardButton>
+    </div>
+  </Card>
+  <Card title="Pendaftaran Kartu & VA" description="Setup kartu identitas dan virtual account." icon={<CreditCard />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-santri/pendaftaran-kartu-dan-va" icon={<CreditCard />}> Pendaftaran Kartu & VA </CardButton>
+    </div>
+  </Card>
+</Cards>

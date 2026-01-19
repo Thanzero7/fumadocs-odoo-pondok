@@ -5,3 +5,32 @@ icon: Box
 ---
 
 Menyediakan data historis mengenai seluruh mutasi stok barang yang pernah terjadi di gudang pesantren.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Box } from 'lucide-react';
+
+<Cards>
+  <Card title="Penerimaan Barang" description="Riwayat penerimaan barang masuk." icon={<Box />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-operasi-stok-persediaan/penerimaan" icon={<Box />}> Penerimaan Barang </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Pengiriman Barang" description="Riwayat pengiriman barang keluar." icon={<Box />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-operasi-stok-persediaan/pengiriman" icon={<Box />}> Pengiriman Barang </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Transfer Internal Barang" description="Riwayat perpindahan barang antar lokasi internal." icon={<Box />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-operasi-stok-persediaan/transfer-internal" icon={<Box />}> Transfer Internal Barang </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Pembuangan Barang" description="Riwayat pembuangan barang rusak/kadaluwarsa." icon={<Box />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-operasi-stok-persediaan/pembuangan" icon={<Box />}> Pembuangan Barang </CardButton>
+    </div>
+  </Card>
+</Cards>

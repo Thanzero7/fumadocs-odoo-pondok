@@ -5,3 +5,26 @@ icon: History
 ---
 
 Laporan real-time mengenai arus kas and transaksi yang terjadi setiap harinya.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { File } from 'lucide-react';
+
+<Cards>
+  <Card title="Buku Bank" description="Catatan transaksi perbankan perusahaan." icon={<File />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/laporan-harian/buku-bank" icon={<File />}> Buku Bank </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Buku Harian" description="Seluruh transaksi akuntansi dalam jurnal harian." icon={<File />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/laporan-harian/buku-harian" icon={<File />}> Buku Harian </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Buku Kas" description="Transaksi penerimaan dan pengeluaran kas." icon={<File />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/laporan-harian/buku-kas" icon={<File />}> Buku Kas </CardButton>
+    </div>
+  </Card>
+</Cards>

@@ -5,3 +5,26 @@ icon: Monitor
 ---
 
 Arsip detail setiap transaksi yang dilakukan melalui sistem kasir, termasuk metode pembayaran dan detail item yang terjual.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Monitor } from 'lucide-react';
+
+<Cards>
+  <Card title="Pesanan POS" description="Riwayat transaksi penjualan point of sale." icon={<Monitor />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-point-of-sale/pesanan-pos" icon={<Monitor />}> Pesanan POS </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Pembayaran POS" description="Riwayat pembayaran transaksi kasir." icon={<Monitor />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-point-of-sale/pembayaran-pos" icon={<Monitor />}> Pembayaran POS </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Sesi POS" description="Riwayat sesi pembukaan dan penutupan kasir." icon={<Monitor />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/data-riwayat/riwayat-point-of-sale/sesi-pos" icon={<Monitor />}> Sesi POS </CardButton>
+    </div>
+  </Card>
+</Cards>

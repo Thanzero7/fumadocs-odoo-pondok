@@ -5,3 +5,14 @@ icon: UserPlus
 ---
 
 Modul PSB mendigitalisasi proses pendaftaran santri baru, mulai dari pengisian formulir hingga tahap kelulusan dan daftar ulang.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { UserPlus } from 'lucide-react';
+
+<Cards>
+  <Card title="Pengelolaan Pendaftaran Santri" description="Manajemen data calon santri baru." icon={<UserPlus />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-psb/pengelolaan-pendaftaran-santri" icon={<UserPlus />}> Pengelolaan Pendaftaran Santri </CardButton>
+    </div>
+  </Card>
+</Cards>

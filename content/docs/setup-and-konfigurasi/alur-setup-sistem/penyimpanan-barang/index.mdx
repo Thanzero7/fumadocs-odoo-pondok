@@ -5,3 +5,15 @@ icon: Box
 ---
 
 Pengaturan struktur fisik gudang untuk memudahkan pelacakan and manajemen stok barang secara efisien.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Warehouse, MapPin } from 'lucide-react';
+
+<Cards>
+  <Card title="Manajemen Gudang" description="Pengaturan lokasi penyimpanan barang." icon={<Warehouse />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/penyimpanan-barang/gudang" icon={<Warehouse />}> Data Gudang </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/penyimpanan-barang/lokasi-dalam-gudang" icon={<MapPin />}> Lokasi Dalam Gudang </CardButton>
+    </div>
+  </Card>
+</Cards>

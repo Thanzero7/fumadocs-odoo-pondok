@@ -1,7 +1,20 @@
 ---
 title: Kepengasuhan
 description: Master data pendampingan asrama and pembinaan karakter santri.
-icon: Home
+icon: UserCog
 ---
 
 Konfigurasi parameter untuk monitoring aktivitas harian di asrama and pembinaan spiritual santri.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { ClipboardList, CheckSquare, Clock } from 'lucide-react';
+
+<Cards>
+  <Card title="Mutaba'ah & Monitoring" description="Kegiatan monitoring harian santri." icon={<ClipboardList />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-kepesantrenan/kepengasuhan/mutabaah" icon={<ClipboardList />}> Data Mutaba'ah </CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/kepengasuhan/kategori-mutabaah" icon={<CheckSquare />}> Kategori Mutaba'ah </CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/kepengasuhan/sesi-mutabaah" icon={<Clock />}> Sesi Mutaba'ah </CardButton>
+    </div>
+  </Card>
+</Cards>

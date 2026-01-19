@@ -5,3 +5,26 @@ icon: ClipboardList
 ---
 
 Pusat informasi bagi wali santri untuk mendapatkan update terkini mengenai kegiatan and kebijakan pesantren.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Users, User, Check } from 'lucide-react';
+
+<Cards>
+  <Card title="Cek Informasi Orang Tua" description="Lihat databbase data pribadi orang tua." icon={<Users />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-orang-tua/cek-informasi-and-pengumuman/cek-informasi-orang-tua" icon={<Users />}> Cek Informasi Orang Tua </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Cek Informasi Santri" description="Lihat detail data santri/anak." icon={<User />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-orang-tua/cek-informasi-and-pengumuman/cek-informasi-santri" icon={<User />}> Cek Informasi Santri </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Cek Pengumuman" description="Lihat pengumuman resmi dari pesantren." icon={<Check />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-orang-tua/cek-informasi-and-pengumuman/cek-pengumuman" icon={<Check />}> Cek Pengumuman </CardButton>
+    </div>
+  </Card>
+</Cards>

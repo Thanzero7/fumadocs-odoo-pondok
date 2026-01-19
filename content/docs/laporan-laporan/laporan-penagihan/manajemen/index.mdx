@@ -5,3 +5,32 @@ icon: ClipboardList
 ---
 
 Laporan strategis untuk membantu manajemen pesantren dalam memantau kondisi operasional and finansial secara berkala.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { FileText, Wallet, Briefcase } from 'lucide-react';
+
+<Cards>
+  <Card title="Analisis Faktur" description="Laporan performa penjualan dan pembelian berdasarkan faktur." icon={<FileText />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/manajemen/analisis-faktur" icon={<FileText />}> Analisis Faktur </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Laporan Analitik" description="Detail biaya dan pendapatan per akun analitik." icon={<FileText />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/manajemen/laporan-analitik" icon={<FileText />}> Laporan Analitik </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Anggaran" description="Monitoring rencana dan realisasi anggaran." icon={<Wallet />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/manajemen/anggaran" icon={<Wallet />}> Anggaran </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Aset" description="Daftar dan nilai penyusutan aset tetap." icon={<Briefcase />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-penagihan/manajemen/aset" icon={<Briefcase />}> Aset </CardButton>
+    </div>
+  </Card>
+</Cards>

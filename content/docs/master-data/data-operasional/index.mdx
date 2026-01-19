@@ -5,3 +5,23 @@ icon: ClipboardList
 ---
 
 Data Operasional berisi informasi dasar mengenai seluruh individu yang terlibat dalam ekosistem pesantren, serta entitas operasional seperti unit kerja.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Users, User, UserCheck, Shield, GraduationCap } from 'lucide-react';
+
+<Cards>
+  <Card title="Civitas Akademika" description="Data santri, guru, dan tenaga kependidikan." icon={<GraduationCap />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-operasional/santri" icon={<User />}> Data Santri </CardButton>
+      <CardButton href="/docs/master-data/data-operasional/guru" icon={<Users />}> Data Guru </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Manajemen & Keamanan" description="Data musyrif, orang tua, dan petugas keamanan." icon={<Shield />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-operasional/musyrif" icon={<UserCheck />}> Data Musyrif </CardButton>
+      <CardButton href="/docs/master-data/data-operasional/orang-tua" icon={<Users />}> Data Orang Tua </CardButton>
+      <CardButton href="/docs/master-data/data-operasional/petugas-keamanan" icon={<Shield />}> Petugas Keamanan </CardButton>
+    </div>
+  </Card>
+</Cards>

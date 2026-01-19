@@ -5,3 +5,38 @@ icon: Box
 ---
 
 Laporan mengenai ketersediaan logistik dan penilaian aset barang milik pesantren pada periode tertentu.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Package, MapPin, File } from 'lucide-react';
+
+<Cards>
+  <Card title="Stok Persediaan" description="Ringkasan jumlah stok di semua gudang." icon={<Package />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-stok-persediaan/stok-persediaan" icon={<Package />}> Stok Persediaan </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Lokasi" description="Posisi penyimpanan dan riwayat perpindahan." icon={<MapPin />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-stok-persediaan/lokasi" icon={<MapPin />}> Lokasi </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Sejarah Pergerakan" description="Riwayat keluar-masuk barang secara detail." icon={<File />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-stok-persediaan/sejarah-pergerakan" icon={<File />}> Sejarah Pergerakan </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Analisis Pergerakan" description="Evaluasi tren pergerakan stok." icon={<File />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-stok-persediaan/analisis-pergerakan" icon={<File />}> Analisis Pergerakan </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Penilaian Stok" description="Nilai finansial persediaan barang." icon={<Package />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/laporan-laporan/laporan-stok-persediaan/penilaian-stok" icon={<Package />}> Penilaian Stok </CardButton>
+    </div>
+  </Card>
+</Cards>

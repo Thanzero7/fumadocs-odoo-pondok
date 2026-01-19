@@ -1,7 +1,24 @@
 ---
 title: Data Kamar Santri & Halaqah
 description: Master data hunian asrama dan kelompok halaqah santri.
-icon: Home
+icon: Users
 ---
 
 Mengelola referensi lokasi fisik asrama, detail kamar, serta pengorganisasian santri ke dalam kelompok halaqah.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Users, User, BedSingle } from 'lucide-react';
+
+<Cards>
+  <Card title="Kamar Santri" description="Pembagian santri ke dalam kamar asrama." icon={<BedSingle />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-kamar-santri-and-halaqah/kamar-santri" icon={<BedSingle />}> Kamar Santri </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Halaqah" description="Kelompok belajar Al-Qur'an dan musyrif pembimbing." icon={<Users />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-kamar-santri-and-halaqah/halaqah" icon={<Users />}> Halaqah </CardButton>
+    </div>
+  </Card>
+</Cards>

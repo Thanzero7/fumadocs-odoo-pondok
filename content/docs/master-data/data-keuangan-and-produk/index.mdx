@@ -5,3 +5,23 @@ icon: CreditCard
 ---
 
 Mengelola seluruh data referensi keuangan dan inventaris barang yang digunakan atau dijual di lingkungan pesantren.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Box, CreditCard, ShoppingCart, Truck, Tag, Receipt } from 'lucide-react';
+
+<Cards>
+  <Card title="Produk & Inventaris" description="Manajemen produk dan kategori untuk stok dan POS." icon={<Box />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-keuangan-and-produk/produk" icon={<Box />}> Data Produk </CardButton>
+      <CardButton href="/docs/master-data/data-keuangan-and-produk/kategori-produk" icon={<Tag />}> Kategori Produk </CardButton>
+      <CardButton href="/docs/master-data/data-keuangan-and-produk/kategori-produk-pos" icon={<ShoppingCart />}> Kategori Produk POS </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Keuangan & Mitra" description="Komponen biaya pendidikan dan data pemasok." icon={<CreditCard />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-keuangan-and-produk/komponen-biaya" icon={<Receipt />}> Komponen Biaya </CardButton>
+      <CardButton href="/docs/master-data/data-keuangan-and-produk/pemasok" icon={<Truck />}> Data Pemasok </CardButton>
+    </div>
+  </Card>
+</Cards>

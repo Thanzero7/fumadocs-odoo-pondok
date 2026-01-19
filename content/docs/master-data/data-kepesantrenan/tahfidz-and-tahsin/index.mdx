@@ -5,3 +5,18 @@ icon: BookOpen
 ---
 
 Konfigurasi parameter untuk monitoring perkembangan kualitas bacaan and kuantitas hafalan santri.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { BookOpen, Book, Scroll, Award, Clock } from 'lucide-react';
+
+<Cards>
+  <Card title="Tahfidz & Tahsin" description="Administrasi hafalan dan bacaan Al-Qur'an." icon={<BookOpen />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-kepesantrenan/tahfidz-and-tahsin/al-quran" icon={<Book />}> Data Al-Qur'an </CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/tahfidz-and-tahsin/buku-tahsin" icon={<BookOpen />}> Buku Tahsin </CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/tahfidz-and-tahsin/daftar-hadits" icon={<Scroll />}> Daftar Hadits </CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/tahfidz-and-tahsin/nilai-tahfidz" icon={<Award />}> Predikat Nilai Tahfidz </CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/tahfidz-and-tahsin/sesi-tahfidz" icon={<Clock />}> Sesi Tahfidz </CardButton>
+    </div>
+  </Card>
+</Cards>

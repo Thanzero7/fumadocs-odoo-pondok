@@ -6,7 +6,38 @@ icon: Box
 
 Modul Stok & Persediaan mengelola seluruh aliran barang di pesantren, memastikan ketersediaan logistik dan akurasi data inventaris.
 
-### Fitur Utama
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Box, Truck, ArrowRightLeft, Trash2, PackagePlus, RefreshCw } from 'lucide-react';
 
-- **Operasi Internal**: Manajemen transfer antar gudang dan penyesuaian stok.
-- **Penerimaan & Pengiriman**: Logistik barang masuk dari vendor dan keluar ke unit-unit.
+<Cards>
+  <Card title="Penerimaan Barang" description="Input barang masuk dari vendor." icon={<Box />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-stok-persediaan/penerimaan-barang" icon={<Box />}> Penerimaan Barang </CardButton>
+    </div>
+  </Card>
+  <Card title="Pengiriman Barang" description="Distribusi barang ke unit lain." icon={<Truck />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-stok-persediaan/pengiriman-barang" icon={<Truck />}> Pengiriman Barang </CardButton>
+    </div>
+  </Card>
+  <Card title="Operasi Internal" description="Transfer stok antar lokasi gudang." icon={<ArrowRightLeft />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-stok-persediaan/operasi-internal" icon={<ArrowRightLeft />}> Operasi Internal </CardButton>
+    </div>
+  </Card>
+  <Card title="Penyesuaian Stok" description="Koreksi jumlah stok (opname)." icon={<RefreshCw />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-stok-persediaan/penyesuaian-stok" icon={<RefreshCw />}> Penyesuaian Stok </CardButton>
+    </div>
+  </Card>
+  <Card title="Pengisian Ulang Barang" description="Restock barang yang menipis." icon={<PackagePlus />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-stok-persediaan/pengisian-ulang-barang" icon={<PackagePlus />}> Pengisian Ulang Barang </CardButton>
+    </div>
+  </Card>
+  <Card title="Pembuangan Barang" description="Scrap barang rusak atau kadaluarsa." icon={<Trash2 />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-stok-persediaan/pembuangan-barang" icon={<Trash2 />}> Pembuangan Barang </CardButton>
+    </div>
+  </Card>
+</Cards>

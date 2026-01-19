@@ -5,3 +5,20 @@ icon: GraduationCap
 ---
 
 Akses bagi wali santri untuk melihat rekam jejak pendidikan anak selama di pesantren.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { User } from 'lucide-react';
+
+<Cards>
+  <Card title="Absensi Santri" description="Pantau kehadiran santri secara real-time." icon={<User />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-orang-tua/monitoring-akademik/absensi-santri" icon={<User />}> Absensi Santri </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Nilai Santri" description="Pantau perkembangan akademik dan nilai tugas/ujian." icon={<User />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/aktivitas-modul/modul-orang-tua/monitoring-akademik/nilai-santri" icon={<User />}> Nilai Santri </CardButton>
+    </div>
+  </Card>
+</Cards>

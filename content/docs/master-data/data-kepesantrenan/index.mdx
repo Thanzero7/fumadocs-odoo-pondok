@@ -5,3 +5,40 @@ icon: Activity
 ---
 
 Data Kepesantrenan mengelola parameter penilaian untuk aspek non-akademik, termasuk target hafalan dan jenis pelanggaran.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { BookOpen, UserCog, ShieldAlert, Trophy } from 'lucide-react';
+
+<Cards>
+  <Card title="Tahfidz & Tahsin" description="Master data kurikulum Al-Qur'an dan Hadits." icon={<BookOpen />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-kepesantrenan/tahfidz-and-tahsin/al-quran" icon={<BookOpen />}> Al-Qur'an </CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/tahfidz-and-tahsin/buku-tahsin" icon={<BookOpen />}> Buku Tahsin </CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/tahfidz-and-tahsin/daftar-hadits" icon={<BookOpen />}> Daftar Hadits </CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/tahfidz-and-tahsin/nilai-tahfidz" icon={<BookOpen />}> Nilai Tahfidz </CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/tahfidz-and-tahsin/sesi-tahfidz" icon={<BookOpen />}> Sesi Tahfidz </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Kepengasuhan" description="Parameter monitoring harian santri (Mutaba'ah)." icon={<UserCog />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-kepesantrenan/kepengasuhan/kategori-mutabaah" icon={<UserCog />}> Kategori Mutaba'ah </CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/kepengasuhan/mutabaah" icon={<UserCog />}> Mutaba'ah </CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/kepengasuhan/sesi-mutabaah" icon={<UserCog />}> Sesi Mutaba'ah </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Pelanggaran & Disiplin" description="Master data jenis pelanggaran dan tindakan disipliner." icon={<ShieldAlert />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-kepesantrenan/pelanggaran/data-pelanggaran" icon={<ShieldAlert />}> Data Pelanggaran </CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/pelanggaran/jenis-pelanggaran" icon={<ShieldAlert />}> Jenis Pelanggaran </CardButton>
+      <CardButton href="/docs/master-data/data-kepesantrenan/pelanggaran/tindakan-disipliner" icon={<ShieldAlert />}> Tindakan Disipliner </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Prestasi" description="Kategori dan jenis prestasi santri." icon={<Trophy />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-kepesantrenan/jenis-prestasi" icon={<Trophy />}> Jenis Prestasi </CardButton>
+    </div>
+  </Card>
+</Cards>

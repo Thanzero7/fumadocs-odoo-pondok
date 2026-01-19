@@ -5,3 +5,34 @@ icon: Wrench
 ---
 
 Bagian ini memandu administrator dalam melakukan pengaturan dasar sistem, mulai dari kurikulum hingga konfigurasi akuntansi.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Wrench, Calendar, GraduationCap, Building2, Bed, BookOpen, HeartHandshake, UserPlus, FileQuestion, ShoppingCart, Landmark, Calculator } from 'lucide-react';
+
+<Cards>
+  <Card title="Konfigurasi Dasar" description="Pengaturan fundamental sistem." icon={<Wrench />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/tahun-ajaran" icon={<Calendar />}> Tahun Ajaran </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/jenjang-pendidikan" icon={<GraduationCap />}> Jenjang Pendidikan </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/struktur-organisasi" icon={<Building2 />}> Struktur Organisasi </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Sarana & Akademik" description="Pengaturan asrama, kelas, dan seleksi." icon={<GraduationCap />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/asrama-and-kamar" icon={<Bed />}> Asrama & Kamar </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/jurusan-and-kelas" icon={<BookOpen />}> Jurusan & Kelas </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/pengaturan-psb" icon={<UserPlus />}> Pengaturan PSB </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/soal-and-penilaian-seleksi" icon={<FileQuestion />}> Soal & Seleksi </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/pengaturan-donasi" icon={<HeartHandshake />}> Pengaturan Donasi </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Modul Lanjutan" description="Konfigurasi modul spesifik." icon={<Wrench />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/akuntansi" icon={<Calculator />}> Akuntansi </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/penyimpanan-barang" icon={<Building2 />}> Penyimpanan Barang </CardButton>
+      <CardButton href="/docs/setup-and-konfigurasi/alur-setup-sistem/point-of-sale" icon={<ShoppingCart />}> Point of Sale </CardButton>
+    </div>
+  </Card>
+</Cards>

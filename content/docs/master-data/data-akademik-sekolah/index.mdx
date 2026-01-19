@@ -5,3 +5,32 @@ icon: BookOpen
 ---
 
 Bagian ini mengelola seluruh data referensi akademik yang menjadi pondasi kegiatan belajar mengajar di pesantren.
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { BookOpen, Calendar, Users } from 'lucide-react';
+
+<Cards>
+  <Card title="Kurikulum & Pembelajaran" description="Manajemen mata pelajaran dan penilaian." icon={<BookOpen />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-akademik-sekolah/mata-pelajaran" icon={<BookOpen />}> Mata Pelajaran </CardButton>
+      <CardButton href="/docs/master-data/data-akademik-sekolah/rencana-pelaksanaan-pembelajaran" icon={<BookOpen />}> RPP </CardButton>
+      <CardButton href="/docs/master-data/data-akademik-sekolah/predikat-nilai" icon={<BookOpen />}> Predikat Nilai </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Jadwal & Kelas" description="Pengaturan waktu dan lokasi belajar." icon={<Calendar />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-akademik-sekolah/jadwal-pelajaran" icon={<Calendar />}> Jadwal Pelajaran </CardButton>
+      <CardButton href="/docs/master-data/data-akademik-sekolah/jam-pelajaran" icon={<Calendar />}> Jam Pelajaran </CardButton>
+      <CardButton href="/docs/master-data/data-akademik-sekolah/ruang-kelas" icon={<Calendar />}> Ruang Kelas </CardButton>
+    </div>
+  </Card>
+
+  <Card title="Kesiswaan & Ekskul" description="Kegiatan ekstrakurikuler dan organisasi." icon={<Users />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/master-data/data-akademik-sekolah/jenis-ekskul" icon={<Users />}> Jenis Ekskul </CardButton>
+      <CardButton href="/docs/master-data/data-akademik-sekolah/pembagian-ekskul" icon={<Users />}> Pembagian Ekskul </CardButton>
+      <CardButton href="/docs/master-data/data-akademik-sekolah/organisasi-siswa" icon={<Users />}> Organisasi Siswa </CardButton>
+    </div>
+  </Card>
+</Cards>

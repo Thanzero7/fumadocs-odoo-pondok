@@ -4,4 +4,14 @@ description: Panduan pemulihan kata sandi baik oleh administrator maupun secara 
 icon: History
 ---
 
-Langkah-langkah untuk memulihkan akses akun jika pengguna lupa kata sandi atau ingin melakukan pembaharuan keamanan.
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Mail, ShieldAlert, KeyRound } from 'lucide-react';
+
+<Cards>
+  <Card title="Metode Pemulihan" description="Pilihan cara untuk mereset kata sandi." icon={<KeyRound />}>
+    <div className="flex flex-col gap-2 mt-4">
+      <CardButton href="/docs/utility-and-penanganan-khusus/reset-password/reset-password-via-gmail" icon={<Mail />}> Reset via Email </CardButton>
+      <CardButton href="/docs/utility-and-penanganan-khusus/reset-password/reset-password-oleh-administrator" icon={<ShieldAlert />}> Reset oleh Admin </CardButton>
+    </div>
+  </Card>
+</Cards>
